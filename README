@@ -1,55 +1,47 @@
-yoel4d
-tomerelal
+PEPSE Game
+Project Description
+
+The game that is displayed when you run the main function in the gameManager file is actually a game in which the player walks 
+in an infinite world in which there are various objects such as a sun that rises and sets, a halo of the sun, trees with leaves 
+on them that fall and grow, earth, sky and the player himself. It should be noted that when the player advances a number of frames
+and then retraces his path, he will find the same frame in the game that he saw before and this is in order to preserve the memory 
+of the game. Also the player can jump and hover for a limited time that depends on his energy level.
+Features and extensions can be added to this game such as competing players, enemies, missions, stages, etc.
 
 
 UML:
-First we thought to create a factory for the leaves strategy, buy ended
-up using callbacks insted, and a new class for leaf.
-Second, we thought to separate the avatar object and the avatar creation,
-but ended up implamenting both in the avatar class.
-Also we defined the energy object in the avatar class since they are act
-together and since the energy does not add something nore than a regular
-gameObject.
-And the highlight is that if it sounds like a tree-trunk or taste like a
-leaf, or maybe looks like a fallen one - it is probebly a ground block.
-Also, there was several places that we add composition to the class for
-other object's game - but then we understood that the other classes just
-created the objects with static function and did not represents them - so
-we removed that.
+In the initial stages of the project, we considered various design choices-
+Originally, we contemplated creating a factory for the leaves strategy but ultimately opted for using callbacks and introducing a new class for leaves.
+Initially, we intended to separate the avatar object and the avatar creation, but we ended up implementing both within the avatar class.
+We defined the energy object in the avatar class since they are closely related and the energy object doesn't introduce any additional 
+complexity beyond a regular gameObject.
+Notably, if it resembles a tree trunk, tastes like a leaf, or even looks like a fallen one, it's probably a ground block.
+At certain points, we added composition to classes for other object's games. However, we realized
+that these other classes merely created the objects using static functions and did not represent them. Consequently, we removed these additions.
 
-
-Infinte world:
-We created 3 frames of the world, and we are maintaining them every
-moment. In each frame we keep all the objects there in a different layer,
-which means 5 layer for each frame. By that when we decide to delete one
-frame we can just delete all the objects in the 5 layers of this frmae
-(of course only thoose who need to be deleted). That we do when the
-avater is going out from the middle frame.
-
+Infinite World:
+We designed an infinite world concept by creating three frames of the world and maintaining them continuously.
+In each frame, we organize all objects into different layers, resulting in five layers for each frame. 
+This approach allows us to easily delete a frame by removing all objects from the five layers associated with that frame,
+as needed. We trigger this process when the avatar moves beyond the middle frame.
 
 Tree:
-we decided to have 4 classes in it.
-The first is the Tree which get a range and creates trees in it.
-The ssecond is the trunk which get only one x coordinate and creates
-there a trunk.
-The third is the Leaves that get the x coordinate also, creates on top of
-the trunk the leaves.
-The Trunk and the Leaves use static function for the creation.
-And the last is the leaf object, that extants the Block object, and have
-some more abilities.
-This way each class has its own defiend and clear responsibilty, exept
-the Leaf that is just a gameObject that add more fanctionality, so had to
-be created.
+We structured the tree component into four classes-
+Tree -> This class takes a range and generates trees within that range.
+Trunk -> The trunk class requires only one x-coordinate and creates a trunk at that location.
+Leaves -> Similar to the trunk, the leaves class also takes an x-coordinate and generates leaves on top of the trunk.
+Leaf Object -> This class extends the Block object and adds additional functionality to it.
+We emphasized clear responsibilities for each class, with the exception of the Leaf Object,
+which serves as a gameObject with enhanced functionality, necessitating its separate creation.
 
+Design
+In our design process, we explored the possibility of using strategies for the leaves and factories for their creation.
+However, we ultimately chose to use callbacks and a single leaf class for simplicity and cleanliness.
+We realized that many elements in the game could be created using the Block class, with changes such as altering colors or,
+in the case of leaves, extending the class.
 
-Design:
-We thought many time about using stategies for the leaves and factory for
-creating them - but in the end we thought that this way, using only
-callback and one leaf class representable is better and cleaner.
-We thought that a lot of things in this game can be created just by using
-the Block class so we used it, and only changes its color, or in the case
-of the leaves, created a class that extends it.
+Acknowledgments
+Thank you for taking the time to explore our project.
 
+Authors: Yoel & Tomer
 
-Thanks for reading it,
-Yoel & Tomer.

@@ -1,6 +1,6 @@
 PEPSE Game
-Project Description
 
+Project Description:
 The game that is displayed when you run the main function in the gameManager file is actually a game in which the player walks 
 in an infinite world in which there are various objects such as a sun that rises and sets, a halo of the sun, trees with leaves 
 on them that fall and grow, earth, sky and the player himself. It should be noted that when the player advances a number of frames

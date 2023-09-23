@@ -10,8 +10,8 @@ Features and extensions can be added to this game such as competing players, ene
 
 
 UML:
-![uml_after](https://github.com/TomerElal/IML.HUJI/assets/126855038/70e740a2-d718-4ee1-9f3f-f5ca3192868d)
 
+![Uploading uml_after.png…]()
 
 Infinite World:
 We designed an infinite world concept by creating three frames of the world and maintaining them continuously.

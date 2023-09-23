@@ -1,5 +1,15 @@
 # PEPSE Game
 
+## Table of Contents
+
+- [Project Description](#ProjectDescription)
+- [Features](#Features)
+- [Installation](#installation)
+- [UML](#UML)
+- [Extensions](#Extensions)
+- [Credits](#credits)
+- [Contact](#contact)
+  
 ## Project Description:
 PEPSE Game is an infinite world adventure game where players explore a dynamic environment with various objects,  
 including a rising and setting sun, trees with falling leaves, earth, sky, and more.  
@@ -39,7 +49,10 @@ In each frame, I organized all objects into different layers, resulting in five 
 This approach allows to easily delete a frame by removing all objects from the five layers associated with that frame,
 as needed. This process begin when the avatar moves beyond the middle frame.
 
-## Acknowledgments
+## Credits
 Acknowledgment to the distributor of danoGameLab with whose help the project could be carried out in the best possible way.
 
+## Contact
 
+- Email: tomerelal1@gmail.com
+- Linkedin: https://www.linkedin.com/in/tomer-elal-635449247/

@@ -11,7 +11,8 @@ Features and extensions can be added to this game such as competing players, ene
 
 UML:
 
-![Uploading uml_after.png…]()
+![uml_after](https://github.com/TomerElal/infinite-world-game-java/assets/126855038/1da2d314-645b-4f6c-be05-c6b2cb496eac)
+
 
 Infinite World:
 We designed an infinite world concept by creating three frames of the world and maintaining them continuously.

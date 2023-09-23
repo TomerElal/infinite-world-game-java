@@ -10,14 +10,8 @@ Features and extensions can be added to this game such as competing players, ene
 
 
 UML:
-In the initial stages of the project, we considered various design choices-
-Originally, we contemplated creating a factory for the leaves strategy but ultimately opted for using callbacks and introducing a new class for leaves.
-Initially, we intended to separate the avatar object and the avatar creation, but we ended up implementing both within the avatar class.
-We defined the energy object in the avatar class since they are closely related and the energy object doesn't introduce any additional 
-complexity beyond a regular gameObject.
-Notably, if it resembles a tree trunk, tastes like a leaf, or even looks like a fallen one, it's probably a ground block.
-At certain points, we added composition to classes for other object's games. However, we realized
-that these other classes merely created the objects using static functions and did not represent them. Consequently, we removed these additions.
+![uml_after](https://github.com/TomerElal/IML.HUJI/assets/126855038/70e740a2-d718-4ee1-9f3f-f5ca3192868d)
+
 
 Infinite World:
 We designed an infinite world concept by creating three frames of the world and maintaining them continuously.

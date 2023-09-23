@@ -18,7 +18,7 @@ Players can jump and hover using their energy level.
   
 ## Installation
 
-First, a third-party library must be installed from here:
+First, a third-party library must be installed from here: https://danthe1st.itch.io/danogamelab
 It is also desirable to work with the IntelliJ code editor, but not mandatory.
 Now after creating the project, the third-party library must be added to the dependencies,
 we will do this by following the sequence of actions - File --> Project structure --> Modules --> Dependencies --> Add a new dependency --> Select the JAR folder.

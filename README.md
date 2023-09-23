@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Project Description](#ProjectDescription)
+- [Project Description](#Project Description)
 - [Features](#Features)
 - [Installation](#installation)
 - [UML](#UML)

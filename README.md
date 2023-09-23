@@ -33,7 +33,7 @@ Now click OK and the third party directory has been successfully added and you c
 ## Extensions
 Features and extensions can be added to this game such as competing players, enemies, missions, stages, etc.
 
-**Infinite World**:
+## Infinite World:
 I designed an infinite world concept by creating three frames of the world and maintaining them continuously.
 In each frame, I organized all objects into different layers, resulting in five layers for each frame. 
 This approach allows to easily delete a frame by removing all objects from the five layers associated with that frame,
